@@ -59,3 +59,14 @@ def ScoreFinder(list_1, list_2, string):
 def Union(list_1, list_2):
     new_list = list_1 + list_2
     return new_list
+
+
+def Intersection(list_1, list_2):
+    player_list = []
+
+    for player in list_1:
+        if player in list_2:
+            player_list.append(player)
+
+    return player_list
+    
