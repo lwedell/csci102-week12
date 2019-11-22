@@ -70,3 +70,12 @@ def Intersection(list_1, list_2):
 
     return player_list
     
+
+def NotIn(list_1, list_2):
+    player_list = []
+
+    for player in list_1:
+        if player not in list_2:
+            player_list.append(player)
+
+    return player_list
