@@ -18,3 +18,13 @@ def LoadFile(file):
             
 
         return output_list
+
+def UpdateString(a, b, index):
+    string_list = list(a)
+    
+    for i in range(len(a)):
+       if i == index:
+            string_list[i] = b
+            
+    new_string = "".join(string_list)
+    PrintOutput(new_string)
