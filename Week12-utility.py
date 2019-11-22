@@ -28,3 +28,12 @@ def UpdateString(a, b, index):
             
     new_string = "".join(string_list)
     PrintOutput(new_string)
+
+def FindWordCount(l, s):
+    count = 0
+    for word in l:
+        if word == s:
+            count += 1
+
+    return count
+    
